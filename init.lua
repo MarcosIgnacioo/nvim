@@ -23,3 +23,11 @@ vim.opt.breakindent= true
 vim.opt.showbreak = string.rep(" ",3)
 vim.opt.linebreak = true
 require "plugins"
+-- En tu archivo init.lua
+
+-- Asegúrate de que Python esté habilitado
+if vim.fn.has('python3') == 1 then
+  -- Establece el intérprete de Python para Neovim
+  vim.g.python3_host_prog = '/ruta/al/entorno/virtual/bin/python'
+end
+
